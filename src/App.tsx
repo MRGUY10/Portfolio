@@ -8,6 +8,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('home')
   const [selectedProject, setSelectedProject] = useState<number | null>(null)
   const [language, setLanguage] = useState<Language>('en')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -226,6 +227,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-gradient">Portfolio</h1>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex gap-8 items-center">
               {['home', 'about', 'skills', 'projects', 'contact'].map((item, index) => (
                 <button
@@ -261,6 +264,60 @@ function App() {
                   FR
                 </button>
               </div>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg glass hover:bg-white/20 transition-all duration-300"
+            >
+              <div className="w-6 h-5 flex flex-col justify-between">
+                <span className={`w-full h-0.5 bg-white rounded transition-all duration-300 ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                <span className={`w-full h-0.5 bg-white rounded transition-all duration-300 ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`w-full h-0.5 bg-white rounded transition-all duration-300 ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${mobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="px-6 py-4 space-y-4 bg-gray-900/95 backdrop-blur-lg border-t border-white/10">
+            {['home', 'about', 'skills', 'projects', 'contact'].map((item) => (
+              <button
+                key={item}
+                onClick={() => {
+                  scrollToSection(item)
+                  setMobileMenuOpen(false)
+                }}
+                className={`block w-full text-left px-4 py-3 rounded-lg capitalize transition-all duration-300 ${
+                  activeSection === item 
+                    ? 'bg-blue-500 text-white font-bold' 
+                    : 'hover:bg-white/10 text-gray-300'
+                }`}
+              >
+                {t.nav[item as keyof typeof t.nav]}
+              </button>
+            ))}
+            
+            {/* Mobile Language Toggle */}
+            <div className="flex gap-2 pt-4 border-t border-white/10">
+              <button
+                onClick={() => setLanguage('en')}
+                className={`flex-1 py-3 rounded-lg transition-all duration-300 ${
+                  language === 'en' ? 'bg-blue-500 text-white' : 'bg-white/10 text-gray-400'
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLanguage('fr')}
+                className={`flex-1 py-3 rounded-lg transition-all duration-300 ${
+                  language === 'fr' ? 'bg-blue-500 text-white' : 'bg-white/10 text-gray-400'
+                }`}
+              >
+                FR
+              </button>
             </div>
           </div>
         </div>
