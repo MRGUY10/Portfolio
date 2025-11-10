@@ -163,12 +163,22 @@ function App() {
 
   const projects = [
     {
+      title: 'MediCare - Healthcare Mobile Platform',
+      description: 'Revolutionary mobile health app connecting patients with doctors and providing AI-powered first aid assistance',
+      tags: ['React Native', 'Python', 'AI/ML', 'Healthcare', 'Mobile App'],
+      color: 'from-emerald-500 to-teal-500',
+      demoUrl: '#',
+      github: 'https://github.com/Mbungai-Francesco/MediCare',
+      details: 'Innovative healthcare solution built with React Native and Python that bridges the gap between patients and medical professionals. The app features an intelligent AI assistant that provides immediate first aid guidance in emergency situations, real-time doctor consultations, appointment scheduling, and medical history tracking. Designed to make healthcare more accessible and responsive, particularly in critical situations where every second counts.',
+      features: ['AI First Aid Assistant', 'Doctor-Patient Video Chat', 'Appointment Management', 'Emergency Response System', 'Medical Records Storage', 'Real-time Notifications']
+    },
+    {
       title: 'CRM - Student Application Management',
       description: 'Modular CRM solution with microservices architecture for managing admissions (Web & Mobile)',
       tags: ['Angular', 'Ionic', 'Spring Boot', 'MySQL', 'Docker', 'Azure'],
       color: 'from-blue-500 to-purple-500',
       demoUrl: '#',
-      github: '#',
+      github: 'https://gitlab.com/Anthony-Feudjio/isj-isi4en-crm-group3',
       details: 'Complete CRM system with separate web interface for administrators and mobile app for students. Features include application tracking, document management, notifications, and automated workflows.',
       features: ['Microservices Architecture', 'Real-time Notifications', 'Document Management', 'Mobile & Web Apps']
     },
@@ -177,8 +187,8 @@ function App() {
       description: 'AI-powered plagiarism detection tool with document comparison and similarity analysis',
       tags: ['Python', 'Flask', 'Angular', 'NLP', 'Machine Learning'],
       color: 'from-red-500 to-orange-500',
-      demoUrl: '#',
-      github: '#',
+      demoUrl: 'https://plagiarismhecker.vercel.app/',
+      github: 'https://github.com/MRGUY10/plagiarismchecker',
       details: 'Advanced plagiarism detection system using Natural Language Processing and machine learning algorithms. Features document upload, text comparison, similarity scoring, and detailed reports with highlighted matches.',
       features: ['NLP Algorithms', 'Document Comparison', 'Similarity Scoring', 'Detailed Reports']
     },
@@ -188,8 +198,8 @@ function App() {
       tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'Keycloak', 'Docker'],
       color: 'from-green-500 to-teal-500',
       demoUrl: '#',
-      github: '#',
-      details: 'Secure banking application for managing hierarchical power delegations across agency network. Includes role-based access control, delegation tracking, and audit trails.',
+      github: 'private',
+      details: 'Secure banking application for managing hierarchical power delegations across agency network. This project is private as it is currently being used in production by Afriland First Bank. Access can be granted upon request for professional purposes. Includes role-based access control, delegation tracking, and audit trails.',
       features: ['Keycloak Authentication', 'GraphQL API', 'Role Management', 'Audit System']
     },
     {
@@ -198,8 +208,8 @@ function App() {
       tags: ['Grafana', 'Prometheus', 'Docker', 'Spring Boot'],
       color: 'from-orange-500 to-pink-500',
       demoUrl: '#',
-      github: '#',
-      details: 'Comprehensive monitoring solution for banking processes. Real-time dashboards, alerting system, and performance metrics tracking for critical business operations.',
+      github: 'private',
+      details: 'Comprehensive monitoring solution for banking processes. This project is private as it is currently being used in production by Afriland First Bank. Access can be granted upon request for professional purposes. Real-time dashboards, alerting system, and performance metrics tracking for critical business operations.',
       features: ['Real-time Monitoring', 'Custom Dashboards', 'Alert Management', 'Performance Metrics']
     },
     {
@@ -208,7 +218,7 @@ function App() {
       tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'Azure'],
       color: 'from-purple-500 to-indigo-500',
       demoUrl: '#',
-      github: '#',
+      github: 'https://gitlab.com/MRGUY10/tutorat_etudiants',
       details: 'Educational platform facilitating connections between tutors and students. Features profile management, session scheduling, integrated messaging, evaluations, and ranking system.',
       features: ['User Profiles', 'Session Booking', 'Messaging System', 'Rating & Reviews']
     },
@@ -340,7 +350,7 @@ function App() {
         <div className="max-w-4xl text-center relative z-10">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-6xl md:text-8xl font-bold mb-6 animate-slide-up">
-              {t.hero.greeting} <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">Kamdem Guy Jordan</span>
+              {t.hero.greeting} <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">Guy Jordan Kamdem</span>
             </h2>
             <p className="text-xl md:text-3xl text-gray-300 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
               {t.hero.title}
@@ -385,12 +395,12 @@ function App() {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
                   <img
                     src="/profile.jpeg"
-                    alt="Kamdem Guy Jordan"
+                    alt="Guy Jordan Kamdem"
                     className="relative w-full rounded-2xl object-cover border-2 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="mt-6 text-center">
-                  <h3 className="text-xl font-bold text-gradient mb-2">Kamdem Guy Jordan</h3>
+                  <h3 className="text-xl font-bold text-gradient mb-2">Guy Jordan Kamdem</h3>
                   <p className="text-gray-400 text-sm">Full Stack Developer</p>
                   <p className="text-blue-400 text-sm mt-1">📍 Limoges, France</p>
                 </div>
@@ -647,22 +657,30 @@ function App() {
             </div>
 
             <div className="flex gap-4">
-              <a
-                href={projects[selectedProject].demoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-center"
-              >
-                🎯 {t.projects.viewDemo}
-              </a>
-              <a
-                href={projects[selectedProject].github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 px-6 py-3 glass rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-center border border-white/20"
-              >
-                💻 {t.projects.viewCode}
-              </a>
+              {projects[selectedProject].demoUrl !== '#' && (
+                <a
+                  href={projects[selectedProject].demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-center"
+                >
+                  🎯 {t.projects.viewDemo}
+                </a>
+              )}
+              {projects[selectedProject].github === 'private' ? (
+                <div className="flex-1 px-6 py-3 glass rounded-full font-semibold text-center border border-yellow-500/50 bg-yellow-500/10">
+                  🔒 {language === 'en' ? 'Private Repository - Contact for Access' : 'Dépôt Privé - Me contacter'}
+                </div>
+              ) : (
+                <a
+                  href={projects[selectedProject].github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 px-6 py-3 glass rounded-full font-semibold hover:scale-105 transition-transform duration-300 text-center border border-white/20"
+                >
+                  💻 {t.projects.viewCode}
+                </a>
+              )}
             </div>
           </div>
         </div>
@@ -729,7 +747,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-gray-400 border-t border-white/10">
-        <p>© 2025 Kamdem Guy Jordan. {t.footer.madeWith}</p>
+        <p>© 2025 Guy Jordan Kamdem. {t.footer.madeWith}</p>
         <p className="mt-2 text-sm">{t.footer.tagline}</p>
       </footer>
     </div>
