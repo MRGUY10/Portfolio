@@ -34,8 +34,8 @@ function App() {
       },
       about: {
         title: 'About Me',
-        paragraph1: "I'm a passionate Full Stack Developer & Software Engineer currently pursuing my Master's degree in Computer Science Engineering at 3IL Ingénieurs (France). Specializing in Java/Spring Boot ecosystem with expertise in building scalable microservices architectures, I combine strong backend engineering skills with modern frontend technologies like Angular and React.",
-        paragraph2: "Through my professional experience at Afriland First Bank, I've successfully delivered enterprise-grade banking applications, implementing secure authentication systems with Keycloak, real-time monitoring solutions with Grafana/Prometheus, and RESTful/GraphQL APIs. My approach focuses on writing clean, maintainable code following best practices and SOLID principles. I'm actively seeking an internship opportunity starting April 2026 to contribute my technical expertise and continue growing as a software engineer.",
+        paragraph1: "I'm a passionate Full Stack Developer & Software Engineer currently in my Engineering Cycle at 3IL Ingénieurs (France), pursuing a Master's degree in Computer Science Engineering. With versatile expertise across multiple technology stacks including enterprise backend frameworks (Spring Boot, Laravel, Flask), modern frontend libraries (React, Angular, Ionic), and cloud infrastructure, I excel at building scalable, production-ready applications that solve real-world problems.",
+        paragraph2: "Through my professional experience in the financial sector, I've delivered mission-critical enterprise applications serving thousands of users in production environments. My end-to-end development approach encompasses the complete software lifecycle: from design and development to rigorous testing, deployment, maintenance, and continuous improvement. Experienced with secure authentication systems, real-time monitoring solutions, microservices architecture, CI/CD pipelines, and comprehensive testing strategies. I thrive in challenging environments where code quality, system reliability, and innovative problem-solving make a tangible impact. Currently seeking an internship opportunity starting April 2026 to bring my technical versatility and production-focused expertise to a dynamic team.",
         yearsLabel: 'Years Coding',
         projectsLabel: 'Projects',
         internshipsLabel: 'Internships',
@@ -87,8 +87,8 @@ function App() {
       },
       about: {
         title: 'À propos de moi',
-        paragraph1: "Je suis un développeur Full Stack passionné et ingénieur logiciel, actuellement en Master d'Ingénierie Informatique à 3IL Ingénieurs (France). Spécialisé dans l'écosystème Java/Spring Boot avec une expertise en architecture microservices évolutive, je combine de solides compétences en développement backend avec des technologies frontend modernes comme Angular et React.",
-        paragraph2: "À travers mon expérience professionnelle chez Afriland First Bank, j'ai réalisé avec succès des applications bancaires d'entreprise, implémenté des systèmes d'authentification sécurisés avec Keycloak, des solutions de monitoring en temps réel avec Grafana/Prometheus, et des APIs RESTful/GraphQL. Mon approche se concentre sur l'écriture de code propre et maintenable en suivant les meilleures pratiques et les principes SOLID. Je recherche activement une opportunité de stage à partir d'avril 2026 pour apporter mon expertise technique et continuer à évoluer en tant qu'ingénieur logiciel.",
+        paragraph1: "Je suis un développeur Full Stack passionné et ingénieur logiciel, actuellement en Cycle Ingénieur à 3IL Ingénieurs (France), poursuivant un Master en Ingénierie Informatique. Avec une expertise polyvalente couvrant plusieurs stacks technologiques incluant les frameworks backend d'entreprise (Spring Boot, Laravel, Flask), les bibliothèques frontend modernes (React, Angular, Ionic), et l'infrastructure cloud, j'excelle dans la conception d'applications évolutives et prêtes pour la production qui résolvent des problèmes concrets.",
+        paragraph2: "À travers mon expérience professionnelle dans le secteur financier, j'ai livré des applications d'entreprise critiques servant quotidiennement des milliers d'utilisateurs en environnement de production. Mon approche de développement de bout en bout englobe l'ensemble du cycle de vie logiciel : de la conception et du développement aux tests rigoureux, au déploiement, à la maintenance et à l'amélioration continue. Expérimenté avec les systèmes d'authentification sécurisés, les solutions de monitoring en temps réel, l'architecture microservices, les pipelines CI/CD, et les stratégies de tests complètes. Je m'épanouis dans des environnements stimulants où la qualité du code, la fiabilité des systèmes et la résolution innovante de problèmes ont un impact tangible. Je recherche actuellement une opportunité de stage à partir d'avril 2026 pour apporter ma polyvalence technique et mon expertise orientée production à une équipe dynamique.",
         yearsLabel: 'Années de code',
         projectsLabel: 'Projets',
         internshipsLabel: 'Stages',
@@ -127,6 +127,7 @@ function App() {
 
   const skills = [
     { name: 'Java & Spring Boot', level: 95, color: 'bg-green-600', category: 'backend' },
+    { name: 'PHP & Laravel', level: 85, color: 'bg-purple-500', category: 'backend' },
     { name: 'Python, Django & Flask', level: 85, color: 'bg-yellow-500', category: 'backend' },
     { name: 'Angular', level: 90, color: 'bg-red-500', category: 'frontend' },
     { name: 'React & Ionic', level: 85, color: 'bg-blue-500', category: 'frontend' },
@@ -162,6 +163,16 @@ function App() {
   }
 
   const projects = [
+    {
+      title: 'JobTrackr - Job Application Management System',
+      description: 'Comprehensive platform for tracking job applications, managing interviews, and organizing career search activities',
+      tags: ['React', 'Laravel', 'PostgreSQL', 'Azure Cloud', 'REST API'],
+      color: 'from-cyan-500 to-blue-500',
+      demoUrl: 'http://isjpreenrollnow.me/',
+      github: 'https://github.com/MRGUY10/JobTrackr',
+      details: 'Full-stack job application tracking system designed to help job seekers organize their career search. Features include application status tracking, interview scheduling, company information management, document storage, and analytics dashboard. Built with React frontend, Laravel backend, PostgreSQL database, and deployed on Azure Cloud for scalability and reliability.',
+      features: ['Application Status Tracking', 'Interview Scheduler', 'Company Database', 'Document Management', 'Analytics Dashboard', 'Cloud Deployment (Azure)']
+    },
     {
       title: 'MediCare - Healthcare Mobile Platform',
       description: 'Revolutionary mobile health app connecting patients with doctors and providing AI-powered first aid assistance',
@@ -221,6 +232,16 @@ function App() {
       github: 'https://gitlab.com/MRGUY10/tutorat_etudiants',
       details: 'Educational platform facilitating connections between tutors and students. Features profile management, session scheduling, integrated messaging, evaluations, and ranking system.',
       features: ['User Profiles', 'Session Booking', 'Messaging System', 'Rating & Reviews']
+    },
+    {
+      title: 'Personal Portfolio Website',
+      description: 'Modern, animated portfolio showcasing my skills, projects, and professional journey',
+      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Vercel'],
+      color: 'from-indigo-500 to-purple-500',
+      demoUrl: 'https://portfolio-five-brown-88.vercel.app/',
+      github: 'https://github.com/MRGUY10/Portfolio',
+      details: 'Fully responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, glassmorphism design, bilingual support (EN/FR), mobile navigation, project modals, and skill categorization. Deployed on Vercel with optimized performance and modern UI/UX design patterns.',
+      features: ['Smooth Animations', 'Glassmorphism Design', 'Bilingual Support (EN/FR)', 'Fully Responsive', 'Project Showcases', 'Skill Categories']
     },
   ]
 
