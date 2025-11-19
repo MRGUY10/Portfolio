@@ -228,7 +228,7 @@ function App() {
       description: 'Web platform connecting student tutors and tutees with messaging, scheduling, and rating system',
       tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'Azure'],
       color: 'from-purple-500 to-indigo-500',
-      demoUrl: '#',
+      demoUrl: 'http://20.199.90.98/',
       github: 'https://gitlab.com/MRGUY10/tutorat_etudiants',
       details: 'Educational platform facilitating connections between tutors and students. Features profile management, session scheduling, integrated messaging, evaluations, and ranking system.',
       features: ['User Profiles', 'Session Booking', 'Messaging System', 'Rating & Reviews']
