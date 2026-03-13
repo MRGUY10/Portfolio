@@ -168,7 +168,7 @@ function App() {
       description: 'Comprehensive platform for tracking job applications, managing interviews, and organizing career search activities',
       tags: ['React', 'Laravel', 'PostgreSQL', 'Azure Cloud', 'REST API'],
       color: 'from-cyan-500 to-blue-500',
-      demoUrl: 'http://isjpreenrollnow.me/',
+      demoUrl: 'https://job-trackr-six.vercel.app/',
       github: 'https://github.com/MRGUY10/JobTrackr',
       details: 'Full-stack job application tracking system designed to help job seekers organize their career search. Features include application status tracking, interview scheduling, company information management, document storage, and analytics dashboard. Built with React frontend, Laravel backend, PostgreSQL database, and deployed on Azure Cloud for scalability and reliability.',
       features: ['Application Status Tracking', 'Interview Scheduler', 'Company Database', 'Document Management', 'Analytics Dashboard', 'Cloud Deployment (Azure)']
@@ -232,6 +232,16 @@ function App() {
       github: 'https://gitlab.com/MRGUY10/tutorat_etudiants',
       details: 'Educational platform facilitating connections between tutors and students. Features profile management, session scheduling, integrated messaging, evaluations, and ranking system.',
       features: ['User Profiles', 'Session Booking', 'Messaging System', 'Rating & Reviews']
+    },
+    {
+      title: 'SIMCO - Intelligent Metacognitive Observation System',
+      description: 'AI-driven learning evaluation platform combining performance, confidence, and behavioral signals',
+      tags: ['Python', 'Computer Vision', 'AI', 'Learning Analytics', 'Adaptive Learning'],
+      color: 'from-teal-500 to-cyan-500',
+      demoUrl: 'https://simco-285d.onrender.com/',
+      github: 'https://github.com/MRGUY10/SIMCO',
+      details: 'SIMCO (System for Intelligent Metacognitive Observation) improves student learning evaluation by combining quiz performance, self-assessment confidence, response times, and non-verbal behavioral indicators extracted through computer vision. It analyzes metacognitive accuracy by comparing perceived confidence with real performance, detects patterns such as overconfidence and underconfidence, and generates personalized pedagogical feedback to improve learning strategies. The platform supports adaptive learning and student self-awareness through ethical and explainable AI-based analysis.',
+      features: ['Metacognitive Accuracy Analysis', 'Confidence vs Performance Gap Detection', 'Response Time Analytics', 'Computer Vision Behavioral Signals', 'Personalized Pedagogical Feedback', 'Ethical & Explainable AI']
     },
     {
       title: 'Personal Portfolio Website',
