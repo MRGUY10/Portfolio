@@ -238,7 +238,7 @@ function App() {
       description: 'AI-driven learning evaluation platform combining performance, confidence, and behavioral signals',
       tags: ['Python', 'Computer Vision', 'AI', 'Learning Analytics', 'Adaptive Learning'],
       color: 'from-teal-500 to-cyan-500',
-      demoUrl: 'https://simco-285d.onrender.com/',
+      demoUrl: 'https://simco-three.vercel.app/',
       github: 'https://github.com/MRGUY10/SIMCO',
       details: 'SIMCO (System for Intelligent Metacognitive Observation) improves student learning evaluation by combining quiz performance, self-assessment confidence, response times, and non-verbal behavioral indicators extracted through computer vision. It analyzes metacognitive accuracy by comparing perceived confidence with real performance, detects patterns such as overconfidence and underconfidence, and generates personalized pedagogical feedback to improve learning strategies. The platform supports adaptive learning and student self-awareness through ethical and explainable AI-based analysis.',
       features: ['Metacognitive Accuracy Analysis', 'Confidence vs Performance Gap Detection', 'Response Time Analytics', 'Computer Vision Behavioral Signals', 'Personalized Pedagogical Feedback', 'Ethical & Explainable AI']
